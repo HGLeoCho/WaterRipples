@@ -38,7 +38,7 @@
   }
 
   function draw() {
-    background(0)
+    background(51)
     loadPixels()
     for (let i = 1; i < cols - 1; i++) {
       for (let j = 1; j < rows - 1; j++) {
@@ -50,7 +50,7 @@
           ) / 4 - current[i][j];
         current[i][j] = current[i][j] * damping
         let index = (i + j * cols) * 4;
-        pixels[index + 0] = current[i][j] * 255
+        pixels[index + 0] = current[i][j] * 100
         pixels[index + 1] = current[i][j] * 255
         pixels[index + 2] = current[i][j] * 255
         pixels[index + 3] = 255
