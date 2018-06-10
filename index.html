@@ -15,7 +15,7 @@
   let cols, rows,
     current = [],
     previous = [],
-    damping = 0.95;
+    damping = 0.944;
 
   function mouseDragged() {
     current[mouseX][mouseY] = 255
@@ -23,7 +23,7 @@
 
   function setup() {
     pixelDensity(1)
-    createCanvas(1000, 1000)
+    createCanvas(500, 500)
     cols = width
     rows = height
     for (let i = 0; i < cols; i++) {
